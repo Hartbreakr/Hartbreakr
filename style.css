@@ -11,9 +11,17 @@ h2 {
 
 body {
   background: linear-gradient(to left, red, cyan);
+  background-size: 200% 200%;
+  animation: gradient-animation 10s ease infinite;
   font-family: 'Trebuchet MS', sans-serif; 
   color: black; 
   text-align: center;
+}
+
+@keyframes gradient-animation {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
 }
 
 a {
